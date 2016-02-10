@@ -7,3 +7,7 @@ Aim was to practice and explore some design patterns.
 Would love all code reviews and critiques. 
 
 Main code is in public/javascripts/script.js
+
+All items are persistent and use localStorage api. 
+
+https://jstodo.herokuapp.com/
