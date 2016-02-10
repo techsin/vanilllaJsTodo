@@ -10,9 +10,21 @@ app.init();
 
 function InputHandler(event) {
   if (event.keyCode == 13) {
-    app.addTask(this.value);
-    this.value = '';
+    if (this.value.length < 3) {
+      animateInput(this);
+      return;
+    } else {
+      app.addTask(this.value);
+      this.value = '';
+    }
   }
+}
+
+function animateInput(input) {
+  input.className = 'flash animated';
+  setTimeout(function(){
+    input.className = '';
+  },1000);
 }
 
 //Controller
