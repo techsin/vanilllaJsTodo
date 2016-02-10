@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f9f9f9;
+  padding-bottom: 200px;
+}
+
+.logo {
+  padding: 50px;
+  text-align: center;
+  font-size: 22px;
+  color: #27f;
+  width: 300px;
+  margin: auto;
+}
+
+.cont {
+  width: 600px;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-top: 3px solid #27f;
+}
+
+.cont input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 9px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.list {
+  margin-top: 40px;
+  background-color: #fff;
+  min-height: 100px;
+}
+
+.task {
+  overflow: auto;
+  transition: background-color .4s;
+}
+
+.task > div {
+  float: left;
+}
+
+.task .box {
+  border: 1px solid #ddd;
+  width: 25px;
+  height: 25px;
+  margin: 18px;
+  border-radius: 4px;
+  transition: border-color .4s;
+  position: relative;
+}
+
+.task .box.checked {
+  background: url(https://cdn2.iconfinder.com/data/icons/basicset/tick_64.png) no-repeat;
+  background-size: 80%;
+  background-position: center;
+}
+
+.task:hover .box {
+  border-color: #000;
+}
+.task:hover .box.checked {
+  border-color: #ddd;
+}
+.task:hover {
+  cursor: pointer;
+  background-color: #fcfcfc;
+}
+
+.task .title {
+  padding: 20px;
+  padding-left: 0;
+  box-sizing: border-box;
+  width: 476.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.task .delete svg {
+  height: 14px;
+  width: 14px;
+  fill: #888;
+  display: inline-block;
+}
+
+.task .delete svg:hover {
+  fill: black;
+}
+
+.task .delete {
+  box-sizing: border-box;
+  padding: 23px;
+}
+
+.task.crossed .title {
+  color: #999;
+  text-decoration: line-through;
+}
+.list .msg {
+  text-align: center;
+  color: #888;
+  padding-top: 30px;
+}
+.hide {
+  display: none;
+}
